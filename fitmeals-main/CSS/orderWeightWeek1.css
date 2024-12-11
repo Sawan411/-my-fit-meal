@@ -1,0 +1,520 @@
+#uppernav{
+  display: flex;
+  border-bottom: 0.2px solid grey;
+  justify-content:space-between;
+  width: 100%;
+  height: 40px;
+  margin-top:-5px;
+  font-size:14.5px;
+  font-weight:400;
+  font-family: 'Fira Sans',serif;
+}
+#leftnav{
+  display: flex;
+  width:600px;
+  padding-top:9px;
+  padding-left: 45px;
+  justify-content:space-between;
+  
+}
+#rightnav{
+  display: flex;
+  width:150px;
+  padding-top:9px;
+  padding-right: 30px;
+  justify-content:space-between;
+  
+}
+#iconuper{
+  font-size:18px;
+  color:#8ec038;
+}
+
+#cont{
+  display: flex;
+  justify-content: space-around;
+  height:100px;
+}
+#link{
+  display: flex;
+  width:550px;
+  justify-content:space-around;
+  padding-top:25px;
+  font-size:13px;
+}
+
+#imglogo{
+  width:80px;
+  height:41px;
+  margin-top:25px;
+}
+#callbtn{
+  height:48px;
+  width:189px;
+  border-radius:25px;
+  background-color:#da2424;
+  border: #da2424;
+  font-size: 16px;
+  margin-top:25px;
+  color:white;
+  font-weight:bold;
+  font-family: 'Fira Sans'serif;
+}
+/* link > h3{
+  color:black;
+} */
+#link > h3:hover{
+  color:#8ec038;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+}
+#healthcoching:hover
+{
+  color:#8ec038;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+}
+#healthcoching{
+  color:black;
+  text-decoration: none;
+}
+#homecss:hover
+{
+  color:#8ec038;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+}
+#homecss{
+  color:black;
+  text-decoration: none;
+}
+
+.droph3 {
+  border: none;
+  cursor: pointer;
+}
+.droph3:hover {
+  border: none;
+  cursor: pointer;
+  color: #8ec038;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+  border-radius:20px;
+  margin-left: -65px;
+  margin-top: 20px;
+}
+
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover{
+  margin: auto;
+  color: white;
+  background-color:#8ec038;
+  border-radius:20px;
+  width:190px;
+}
+
+.dropdown-content a:last-child{
+    margin-bottom:20px;
+}
+
+
+ #relatedProducts
+ {
+     text-align: center;
+     font-family: 'Fira Sans', sans-serif;
+     font-size: 120px;
+     font-weight: bold;
+     background-color: #da2424;
+ }
+#container {
+    width: 100%;
+    height: 350px;
+    background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_02.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-color: var(--black); */
+    height: 340px;
+    /* margin: 0; */
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    padding-bottom: 0px;
+    background-repeat: no-repeat; 
+    position: relative;
+    background-position: 50% 0px;
+    background-size: cover;
+    border: 0 none;
+    opacity: 0.8;   
+    filter: contrast(90%);
+    filter: grayscale(10%)
+  }
+
+  #container > h1 {
+    text-align: center;
+    padding-top: 17px;
+    color: white;
+    font-size: 48px;
+    font-family: 'Fira Sans', sans-serif;
+    opacity: 2;   
+    filter: contrast(100%);
+    filter: grayscale(10%)
+  }
+
+  #cart
+  {
+      box-sizing: border-box;
+      width:80% ;
+      height:600px;
+      margin: auto;
+      margin-top: 100px;
+      display: flex;
+      padding-left: 100px;
+     
+      
+  }
+  #cart > div
+  {
+    /* border:1px solid red; */
+    width:490px ;
+    height:466px ; 
+    margin-right: 25px;
+    margin-top:8px ; color:grey;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 25px;   
+  }
+
+  #cart > div:last-child
+  {
+      height:566px;
+  }
+
+  #cartImage
+  {
+      width:490px ;
+      height:466px ; 
+  }
+
+  #quantity
+  {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+    background-clip: border-box;
+    width: 12%;
+    height: 10%;
+    padding: 0 0 0 30px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+ 
+  }
+
+  .addToCart
+  {
+    background-color: #da2424;
+    height:40px;
+    width:135px;
+    border-radius: 20px;
+    border:0px;
+    font-size:medium;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+
+  .addToCart:hover
+  {
+    background-color:#8EC038;
+  }
+
+  .goToCart
+  {
+    background-color: #da2424;
+    height:40px;
+    width:135px;
+    border-radius: 20px;
+    border:0px;
+    font-size:medium;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+
+  .goToCart:hover
+  {
+    background-color:#8EC038;
+  }
+
+  
+    
+  #descriptionReviews
+  {
+
+      height:70px;
+      width:1000px; 
+      margin: auto;
+      margin-top: 60px;
+      text-align: center;
+      font-family: 'Fira Sans', sans-serif;
+      font-size: larger;
+      font-weight: 700;
+      color:rgb(46, 44, 44)  
+  }
+
+  #description:hover,#reviews:hover{
+        text-decoration: underline;
+        text-decoration-color: #da2424;
+        text-underline-offset:7px ;
+  }
+
+  #mealPreference
+  {
+    border: 1px solid lightgrey;
+    margin-left: 20px;
+    border-radius:10px;
+  }
+  /* #mealPreference:focus{
+    border: 1px solid white;
+  } */
+
+  #descriptionData
+  {
+      height:420px;
+      width:80% ;
+      /* border:1px solid teal; */
+      margin: auto;
+      font-family: 'Open Sans', sans-serif;
+
+  }
+
+  #descriptionData>div
+  {
+    /* box-sizing: border-box; */
+    height:170px;
+    width:90% ;
+    /* border:1px solid black ; */
+    margin-top: 20px;
+    margin: auto;
+
+  }
+
+  .note + ul {
+    margin-top: 20px;    
+  }
+  .note + ul >li
+  {
+    line-height: 40px;
+  }
+
+  #descriptionData >div:first-child
+  {
+    line-height: 25px;
+  }
+
+ #RelatedProducts
+ {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 90px;
+ }
+
+ #sampleProduct
+ {
+     box-sizing: border-box;
+     display:flex;
+     height:580px;
+     width:85% ;
+     /* border:1px solid red ; */
+     margin:auto ;
+     padding-left: 40px;
+     font-family: 'Fira Sans', sans-serif;
+ }
+
+ #sampleProduct > div
+ {
+    height:550px;
+    width:35%;
+    /* border: 1px solid teal; */
+    margin-right:38px;
+    text-align: center;
+ }
+
+ #sampleProduct > div >img
+ {
+    width:360px;
+    height:337px;
+    border-radius: 8%;
+ }
+
+ #sampleProduct > div  >img:hover
+ {
+     width:340px ;
+     height:315px;
+     transition: all 0.3s ease;
+     margin-bottom: 22px;
+ }
+
+ 
+
+ .producttitle
+ {
+    font-size: 24px;
+    font-family: 'Fira Sans', serif;
+    font-family: var(--font-headers), serif;
+    font-weight: 700;
+    padding: 6px 0 15px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+ }
+
+ .producttitle:hover
+ {
+    color:#8EC038;
+ }
+
+ bdi {
+    unicode-bidi: isolate;
+    font-size: 24px;
+    color:red;
+   
+}
+
+.PriceSymbol
+{
+    color: #DDC76D;
+    color: var(--second);
+    font-family: 'Fira Sans', serif;
+    font-family: var(--font-headers), serif;
+   
+}
+.readmore
+{
+    color:#8EC038;
+    font-size:13px ;
+    font-weight: 700;
+}
+.readmore:hover
+{
+    color:black;
+}
+
+#container1{
+  margin-top:50px;
+  display: flex;
+  background-color: #282834;
+  height: 500px;
+  justify-content:space-around;
+  font-family: "Fira Sans",serif; 
+}
+
+#container1>div{
+  margin-top: 70px;
+  width: 200px;
+  justify-content: center; 
+}
+
+#desc{
+  color:white;
+  cursor: pointer;
+  width: 120px;
+}
+#dispicon{
+  color: #8ec038;
+  cursor: pointer;
+  font-size:12px;
+}
+#dispicon1{
+  font-size:10px;
+}
+#dispicon1:hover{
+  color: #8ec038;
+}
+
+#text{
+  color: #ffffffa6;
+  font-family: 'Open sans',sans-serif;
+  font-size:14px;
+  margin-top:30px;
+  margin-bottom: 40px;
+  text-align:left;
+}
+#imgtrio{
+  
+  width: 150px;
+  display: flex;
+  justify-content:space-around;
+}
+#imgtrio > i{
+  font-size:25px;
+  color:#8ec038;
+  
+}
+
+#footlogo{
+  width: 150px;
+  height:76px;
+}
+
+#contact{
+  color:white;
+}
+
+#log{
+  color:#8ec038;
+}
+
+#foot > h5{
+  font-size:12px;
+  color:white;
+  margin-top:6px;
+  padding-left: 20px;
+}
+
+#expl{
+  color:#8ec038;
+}
+.green{
+  color:#8ec038;
+}
+
+
+
+
+
+  

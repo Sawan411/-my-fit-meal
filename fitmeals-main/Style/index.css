@@ -1,0 +1,878 @@
+body{
+  font-family: 'Fira Sans'serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9B4kDNxMZdWfMOD5VnLK3eSRf6TF0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+#img1 {
+    display: flex;
+    flex-wrap: wrap;
+    filter: brightness(95%);
+    height: 600px;
+    background:linear-gradient(rgba(3, 3, 3, 0.5), rgba(61, 61, 61, 0.5)), url(https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_01.jpg);
+    background-size: cover;
+}
+#img2 {
+    display: flex;
+    flex-wrap: wrap;
+    filter: brightness(95%);
+    height: 600px;
+    background:linear-gradient(rgba(5, 5, 5, 0.5), rgba(8, 8, 8, 0.5)), url(https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_02.jpg);
+    background-size: cover;    
+}
+#img3 {
+    display: flex;
+    flex-wrap: wrap;
+    filter: brightness(95%);
+    height: 600px;
+    background:linear-gradient(rgba(5, 5, 5, 0.5), rgba(8, 8, 8, 0.5)), url(https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_03.jpg);
+    background-size: cover;
+}
+
+#img4 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    filter: brightness(95%);
+    background:linear-gradient(rgba(5, 5, 5, 0.5), rgba(8, 8, 8, 0.5)), url(https://www.fitmeals.co.in/wp-content/uploads/2021/09/Creative-1-1920x1280px.jpg);
+    /* background-image:url(); */
+    background-size: cover;
+}
+
+
+
+
+#img5{
+  height:600px;
+  width:400px;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+  .pbtn {
+    color: black;
+    width:60px;
+    border:2px solid black;
+    height:40px;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 25px;
+  }
+  .nbtn {
+    color: black;
+    width:60px;
+    border:2px solid black;
+    height:40px;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 25px;
+  }
+  #content {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: space-between;
+      padding-top: 230px;
+  }
+  #ptag{
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    text-align:center;
+    margin-top:-30px;
+    color:white;   
+  }
+  
+  #headTag{
+    text-align: center;
+    font-size: 80px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: -100px;
+  }
+
+  #items{
+    width: 100%;
+  }
+  head{
+    width: 80%;
+  }
+  #downloadBtn{
+       display: flex;
+       height:50px;
+       width:170px;
+       border-radius:50px;
+       justify-content:center;
+       background-color: #8ec038;
+       font-size:20px;
+       box-sizing: border-box;
+       border: 2px solid #8ec038;
+       margin: auto;
+       padding-top:12px;
+       color:white;
+  }
+
+  #exbtn{
+    display : flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-around;
+    margin: auto;
+  }
+
+
+  #paraTag1{
+    display: flex;
+    height:500px;
+    width: 100%;
+    padding-top:100px;
+    justify-content: space-between;
+  }  
+  #imgn{
+    height:409px;
+    width: 351px;
+  }
+
+  #paratag{
+    width: 500px;
+    padding-left: 20px;
+    text-align: justify;
+  }
+
+  #list > p{
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+  #logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: 100%;
+    text-align: center;
+  }
+
+  #headtagscr{
+    font-family:'Sacramento', serif ;
+    color: #8ec038;
+    font-size:38px;
+  }
+
+  #logos>div{
+    width:22%;
+  }
+  #content2{
+    background-color:#f3f5ed;
+    padding-top:50px;
+    text-align:center;
+  }
+
+  #rotateimg{
+    display: flex;
+    border-radius:50%;
+    justify-content:center;
+    width:90%;
+    padding-top: 50px;
+    margin: auto;
+    
+  }
+  #rotateimg:hover{
+    border-radius:50%;
+    overflow: hidden;
+    
+    width:90%;
+     background-repeat: no-repeat;
+    animation: mymove 20s infinite;
+  }
+  @keyframes mymove {
+    100% {transform: rotate(360deg);}
+   }
+
+   #float{
+     
+     width:100%;
+     height: 800px;
+     background-color:#8ec038;
+     padding-top:100px;
+     /* border-radius: 50px; */
+     margin-top:-50px;
+     background-image:url(https://www.fitmeals.co.in/wp-content/uploads/2019/10/nutrion-left.png)
+   }
+   #info{
+     display: block;
+     justify-content:center;
+     margin: auto;
+     background-color:white;
+     width:90%;
+     height:650px;
+     border-radius:50px;
+     padding-top: 70px;
+     text-align: center;
+   }
+   #plan{
+     display: flex;
+     justify-content:center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+   }
+   #plan>div{
+    text-align: center;
+     border-radius: 50px;
+     color:black;
+     height:30px;
+     width:190px;
+     margin-bottom: 20px;
+     padding-top:15px ;
+   }
+
+   #plan > div:hover{
+    text-align: center;
+     border-radius: 50px;
+     color:#8ec038;
+     height:30px;
+     width:190px;
+     animation-play-state: paused;
+     margin-bottom: 20px;
+     border:2px solid #8ec038;
+     padding-top:15px ;
+   }
+
+   #mealPlan{
+     display: flex;
+     justify-content:center;
+     justify-content:space-between;
+     text-align: justify;
+     width:90%;
+     height:400px;
+     margin: auto;
+     padding-top:50px;
+   }
+   #mimg{
+     width:500px;
+     height:320px;
+     box-sizing: border-box;
+     border-radius: 10px;
+   }
+   #mealText{
+     padding-left: 30px;
+   }
+
+#imgl1 {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  perspective: 1000px;
+}
+
+#imgl1 {
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+#imgl1:hover {
+  transform: rotateY(180deg);
+  transform:rotateY(180deg)
+}
+#btnPlan{
+       height:62.4px;
+       width:200px;
+       border-radius:50px;
+       background-color: #da2424;
+       font-size:19px;
+       box-sizing: border-box;
+       border: 2px solid #da2424;
+       margin: auto;
+       font-family:'Fira Sans',serif;
+       color:white;
+}
+#btnPlan:hover{
+  height:62.4px;
+  width:200px;
+  border-radius:50px;
+  background-color:black;
+  font-size:20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin: auto;
+  font-family:'Fira Sans',serif;
+  color:white;
+}
+
+#scrollbar{
+            background-size: cover;
+            background:linear-gradient(rgba(14, 13, 13, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.fitmeals.co.in/wp-content/uploads/2018/02/trial_parallax.jpg);
+            background-attachment: fixed;
+            /* background-color: var(--black); */
+            height: 500px;
+            text-align: center;
+            display: flex;
+            color: white;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 0;
+            background-repeat: no-repeat;
+            position: relative;
+            background-position: 50% 0px;
+            background-size: cover;
+             border: 0 none;  
+             opacity: 0.9;
+             filter: brightness(30%);
+             filter: drop-shadow(16px 16px 20px black);       
+            filter: contrast(90%) 
+}
+
+#featuresof{
+  padding:20px 100px 20px 100px;
+}
+
+#scrollbar-inner{
+  font-size: 36px;
+  font-family: 'Fira Sans', serif;
+  text-align: center;
+}
+
+#dietplan{
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  height:400px;
+  justify-content:space-between;
+  padding-bottom: 50px;
+}
+
+#dietplan1{
+  width:30%;
+  margin-left:40px;
+}
+#dietplan1 > h3{
+  font-family: 'Fira Sans', serif;
+  font-size:30px;
+}
+
+#imgdiet{
+  width:360px;
+  height:360px;
+}
+
+#imgslide{
+  margin-right: 10px;
+  width:400px;
+  box-sizing: border-box;
+  height:400px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slideshow-container {
+  display: flex;
+  justify-content:center;
+  position: relative;
+
+  height:400px;
+  width: 100%;
+  /* padding-top:60px; */
+  background-color:whitesmoke;
+  transition: 1s linear;
+  /* border: 2px solid rgb(143, 140, 140); */
+  margin: auto;
+}
+#uppernav{
+  display: flex;
+  border-bottom: 0.2px solid grey;
+  justify-content:space-between;
+  width: 100%;
+  height: 40px;
+  margin-top:-5px;
+  font-size:14.5px;
+  font-weight:400;
+  font-family: 'Fira Sans',serif;
+}
+#leftnav{
+  display: flex;
+  width:600px;
+  padding-top:9px;
+  padding-left: 45px;
+  justify-content:space-between;
+  
+}
+#rightnav{
+  display: flex;
+  width:150px;
+  padding-top:9px;
+  padding-right: 30px;
+  justify-content:space-between;
+  
+}
+#icon{
+  font-size:18px;
+  color:#8ec038;
+}
+
+#container{
+  display: flex;
+  justify-content: space-around;
+  height:100px;
+}
+#link{
+  display: flex;
+  width:550px;
+  justify-content:space-around;
+  padding-top:25px;
+  font-size:13px;
+}
+
+#imglogo{
+  width:80px;
+  height:41px;
+  margin-top:25px;
+}
+#callbtn{
+  height:48px;
+  width:189px;
+  border-radius:25px;
+  background-color:#da2424;
+  border: #da2424;
+  font-size: 16px;
+  margin-top:25px;
+  color:white;
+  font-weight:bold;
+  font-family: 'Fira Sans'serif;
+}
+/* link > h3{
+  color:black;
+} */
+#link > h3:hover{
+  color:#8ec038;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+}
+#healthcoching:hover
+{
+  color:#8ec038;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+}
+#healthcoching{
+  color:black;
+  text-decoration: none;
+}
+
+.droph3 {
+  border: none;
+  cursor: pointer;
+}
+.droph3:hover {
+  border: none;
+  cursor: pointer;
+  color: #8ec038;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+  border-radius:20px;
+  margin-left: -65px;
+  margin-top: 20px;
+}
+
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover{
+  margin: auto;
+  color: white;
+  background-color:#8ec038;
+  border-radius:20px;
+  width:190px;
+}
+
+.dropdown-content a:last-child{
+    margin-bottom:20px;
+}
+
+#container1{
+  display: flex;
+  background-color: #282834;
+  height: 500px;
+  justify-content:space-around;
+  font-family: "Fira Sans",serif; 
+}
+
+#container1>div{
+  margin-top: 70px;
+  width: 200px;
+  justify-content: center; 
+}
+
+#desc{
+  color:white;
+  cursor: pointer;
+  width: 120px;
+}
+#dispicon{
+  color: #8ec038;
+  cursor: pointer;
+  font-size:12px;
+}
+#dispicon1{
+  font-size:10px;
+}
+#dispicon1:hover{
+  color: #8ec038;
+}
+
+#text{
+  color: #ffffffa6;
+  font-family: 'Open sans',sans-serif;
+  font-size:14px;
+  margin-top:30px;
+  margin-bottom: 40px;
+  text-align:left;
+}
+#imgtrio{
+  
+  width: 150px;
+  display: flex;
+  justify-content:space-around;
+}
+#imgtrio > i{
+  font-size:25px;
+  color:#8ec038;
+  
+}
+
+#footlogo{
+  width: 150px;
+  height:76px;
+}
+
+#contact{
+  color:white;
+}
+
+#log{
+  color:#8ec038;
+}
+
+#foot > h5{
+  padding-left: 40px;
+}
+
+#expl{
+  color:#8ec038;
+}
+.green{
+  color:#8ec038;
+}
+
+
+/* Readmore Button */
+
+#Readmore{
+  width: 190px;
+  height: 50px;
+  background-color: #292d35;
+  border:none;
+  color:white;
+  margin-top: 40px;
+  font-family: 'Fira Sans'serif;
+  font-size:16px;
+  font-weight:bold;
+  border-radius: 25px;
+}
+
+
+#food-blog-container{
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: 750px;
+  justify-content: space-around;
+ 
+}
+#food-blog-container>div{
+    width: 370px;
+    background-color:#fff;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #f3f5ed;
+    justify-content: space-around;
+   
+}
+#first{
+   height: 740px;
+}
+#second{
+   height:650px;
+}
+#third{
+   height: 550px;
+  line-height: 30px;
+}
+#food-blog-container img{
+   width: 370px;
+   height: 300px;
+  transition: 0.7s;
+   
+}
+#second:last-child{
+ height: 500px;
+}
+#second img{
+   height: 200px;
+}
+#third img{
+   height: 200px;
+}
+#food-blog-container>div>div{
+  
+   text-align: center;
+   overflow: hidden;
+   
+}
+
+p{
+   font-family: "Open Sans", sans-serif;
+   color:rgba(0, 0, 0, 0.658);
+}
+.text{
+   background-color:#f3f5ed;
+   padding: 30px;
+}
+.lower-div{
+   display: flex;
+   justify-content:center;
+   color:rgba(41,45,53,.7);
+   font-family: "Open Sans", sans-serif;
+   background-color: #f3f5ed;  
+   border-top: 2px solid white;
+   padding-top: 30px;
+}
+.lower-div>div{
+   margin-right: 20px;
+   font-family: "Open Sans", sans-serif;
+   font-size: 12px;
+}
+.lower-div>div>i{
+   color: #70a21a;
+   width: 28px;
+   height: 16px;
+}
+
+.btn{
+   width: 170px;
+   height: 40px; 
+   color: #FFFFFF;
+   background-color: #70a21a; 
+   border-radius: 30px; 
+   border:none ;
+   font-size:16px;
+   font-weight:bold;
+   border-color: #70a21a;
+}
+.btn:hover{
+   background-color: #f3f5ed;
+   color: #70a21a;
+   border:1px solid #70a21a;
+}
+#food-blog-container img:hover{
+   transform: rotate(4deg) scale(1.25);
+}
+#sacremento{
+     font-family: "Sacramento", serif ;
+   color: #70a21a;
+   font-size: 40px;
+   margin-bottom: -10px;
+   font-weight: lighter;
+}
+#fira{
+   margin-top: -10px;
+   font-size: 40px;
+   font-weight: bolder;
+   font-family: 'Fira Sans Condensed', sans-serif;
+}
+#heads{
+   font-size: 40px;
+   text-align: center;
+}
+#lowerbtn{
+   height: 55px;
+   width: 190px;
+   font-family: 'Fira Sans Condensed', sans-serif; 
+   background-color: #da2424;
+   color: #FFFFFF;
+   font-weight:bold;
+   font-size:16px;
+   margin: 30px 0px 30px 0px;
+   border-radius: 30px;
+   border: none;
+}
+#btnDiv{
+    display: flex;
+   justify-content: center;
+   width: 100%;
+}
+#join{
+   background-color: #70a21a;
+   height: 430px;
+   text-align: center;
+   justify-content: center;
+}
+#diff-text{
+   font-family: 'Fira Sans Condensed', sans-serif; 
+  font-size: 40px;
+
+
+}
+#join>p{
+   font-family: "Open Sans", sans-serif;
+   padding-top: -10px;
+}
+#email{
+   font-family: 'Fira Sans Condensed', sans-serif;
+  height: 66px;
+   width: 361px;
+   border-radius: 30px;
+   border: none;
+   padding: 22px 30px;
+   box-sizing: border-box;
+   font-size: 18px;
+   margin-top: 30px;
+}
+#subscribe{
+   width: 200px;
+   height: 66px;
+   background-color: #da2424;
+   color: #FFFFFF;
+   border: none;
+   border-radius: 50px;
+   margin-left: -60px;
+   font-family: 'Fira Sans Condensed', sans-serif;
+   font-weight: bolder;
+   font-size: 18px;
+   margin-top: 30px;
+}
+#diff-text{
+   display:flex;
+   justify-content: center;
+}
+#white{
+   color: #FFFFFF;
+   margin-left: 8px;
+}
+#image{
+   margin-bottom: -10px;
+}
+#image>img{
+   width: 100%;
+   padding-bottom: -10px;
+}
+#slideshow{
+   height: 850px;
+   width:100% ;
+   margin:auto;
+   background-color: #f3f5ed;
+   margin-bottom: -200px;
+  
+   display: flex;
+   justify-content: center;
+}
+#slideshow>div{
+   height:400px;
+   display: flex;
+ 
+   margin-top: 230px;
+}
+
+#testimonialsheads{
+   margin-bottom: -200px;
+   text-align: center;
+   line-height: 10px;
+}
+#testimonialsheads>h6{
+   font-family: "Sacramento", serif ;
+   color: #8ec038;
+   font-size: 40px;
+   margin-bottom: -1px;
+   font-weight: lighter;
+}
+#testimonialsheads>h2{
+   font-family: 'Fira Sans Condensed', sans-serif;
+   font-size: 40px;
+   font-weight: bolder;
+
+}
+
+
+
+
+#slideshow>div>button{
+   margin-top: 200px;
+   height: 50px;
+   width: 50px;
+   border-radius: 30px;
+   border:1px solid rgba(0, 0, 0, 0.658);
+}
+
+ #slideshow>div>button:hover{
+   background-color: rgba(0, 0, 0, 0.658);
+   color:#FFFFFF;
+
+}
+#mymarquee{
+   display: flex;
+}
+.photos{
+   display:none;
+   width: auto;
+
+}
+#firstimg{
+   display: block;
+}
+#slideshow{
+  height: 850px;
+  width:100% ;
+  margin:auto;
+  background-color: #f3f5ed;
+  margin-bottom: -200px;
+ 
+  display: flex;
+  justify-content: center;
+}
+#slideshow>div{
+  height:400px;
+  display: flex;
+
+  margin-top: 230px;
+}

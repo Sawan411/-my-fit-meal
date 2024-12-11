@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - fitmeals</title>
+    <script src="https://kit.fontawesome.com/6ee714d796.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/06d9f213d3.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #uppernav{
+  display: flex;
+  border-bottom: 0.2px solid grey;
+  justify-content:space-between;
+  width: 100%;
+  height: 40px;
+  margin-top:-5px;
+  font-size:14.5px;
+  font-weight:400;
+  font-family: 'Fira Sans',serif;
+}
+#leftnav{
+  display: flex;
+  width:600px;
+  padding-top:9px;
+  padding-left: 45px;
+  justify-content:space-between;
+  
+}
+#rightnav{
+  display: flex;
+  width:150px;
+  padding-top:9px;
+  padding-right: 30px;
+  justify-content:space-between;
+  
+}
+#iconuper{
+  font-size:18px;
+  color:#8ec038;
+}
+
+#cont{
+  display: flex;
+  justify-content: space-around;
+  height:100px;
+}
+#link{
+  display: flex;
+  width:550px;
+  justify-content:space-around;
+  padding-top:25px;
+  font-size:13px;
+}
+
+#imglogo{
+  width:80px;
+  height:41px;
+  margin-top:25px;
+}
+#callbtn{
+  height:48px;
+  width:189px;
+  border-radius:25px;
+  background-color:#da2424;
+  border: #da2424;
+  font-size: 16px;
+  margin-top:25px;
+  color:white;
+  font-weight:bold;
+  font-family: 'Fira Sans'serif;
+}
+/* link > h3{
+  color:black;
+} */
+#link > h3:hover{
+  color:#8ec038;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+}
+#healthcoching:hover
+{
+  color:#8ec038;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+}
+#healthcoching{
+  color:black;
+  text-decoration: none;
+}
+#homecss:hover
+{
+  color:#8ec038;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+}
+#homecss{
+  color:black;
+  text-decoration: none;
+}
+
+.droph3 {
+  border: none;
+  cursor: pointer;
+}
+.droph3:hover {
+  border: none;
+  cursor: pointer;
+  color: #8ec038;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+  border-radius:20px;
+  margin-left: -65px;
+  margin-top: 20px;
+}
+
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover{
+  margin: auto;
+  color: white;
+  background-color:#8ec038;
+  border-radius:20px;
+  width:190px;
+}
+
+.dropdown-content a:last-child{
+    margin-bottom:20px;
+}
+
+        .page-header{
+            background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/inner-page.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            /* background-color: var(--black); */
+            height: 400px;
+            /* margin: 0; */
+
+            text-align: center;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+            padding-bottom: 0;
+            background-repeat: no-repeat; 
+            position: relative;
+            background-position: 50% 0px;
+            background-size: cover;
+             border: 0 none;   
+             opacity: 0.6;
+             filter: brightness(0.8);
+             /* filter: drop-shadow(16px 16px 20px black);       */
+            /* filter: contrast(90%) */
+            filter: grayscale(10%)
+        }
+         #container{
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            padding: 150px 15px;
+            position: relative;
+            z-index: 2;          
+        }
+        h1{
+            font-size: 54px;
+            font-weight: 800;
+             color: #fff;
+            font-family: 'Mukta', sans-serif;
+        }
+        
+        body{
+            margin: 0;
+        }
+        #inner-container{
+            /* border: 2px solid red; */
+            width: 70%;
+            margin: auto;
+            margin-top: 120px;
+        }
+        #inner-container > div{
+            /* border: 2px solid blue; */
+            margin-bottom: 40px;
+        }
+        .box{
+            background-color: #f7f6f7;
+            padding: 20px;
+            font-size: 17px;
+            color: #383d46;
+            border-radius: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: #383d46;
+        }
+        a:hover{
+            color: #91c23e;
+        }
+        p{
+            font-size: 40px;
+            font-weight: 900;
+        }
+        input{
+            border-radius: 30px;
+            padding: 18px;
+            border: 1px solid grey;
+        }
+        sup{
+            color: red;
+        }
+        #name{
+            display: flex;
+            
+        }
+        .inner{
+            margin-right: 15px;
+        }
+        select{
+            padding: 18px;
+            border-radius: 30px;
+            color: #383d46;
+            width: 15%;
+            /* text-align: center; */
+            font-size: 17px;
+
+        }
+        option{
+            font-weight: 200;
+            text-align: left;
+        }
+        label{
+            font-size: 18px;
+            font-weight: bold;
+            color: grey;
+            /* margin-bottom: 30px; */
+        }
+        #myForm > div{
+            margin-bottom: 30px;
+        }
+        #container1{
+        margin-top:50px;
+        display: flex;
+        background-color: #282834;
+        height: 500px;
+        justify-content:space-around;
+        font-family: "Fira Sans",serif; 
+}
+.Chkbtn{
+  width:285px;
+  height:57px;
+  background-color: #da2424;
+  border-radius: 30px;
+  border:0px;
+  font-weight: 600;
+  margin-left:73%;
+  font-size:14px;
+  color:white;
+  margin-top: 30px;
+}
+.Chkbtn:hover{
+  background-color:#8EC038;
+  transition: all 0.5s ease;
+}
+
+#container1>div{
+  margin-top: 70px;
+  width: 200px;
+  justify-content: center; 
+}
+
+#desc{
+  color:white;
+  cursor: pointer;
+  width: 120px;
+}
+#dispicon{
+  color: #8ec038;
+  cursor: pointer;
+  font-size:12px;
+}
+#dispicon1{
+  font-size:10px;
+}
+#dispicon1:hover{
+  color: #8ec038;
+}
+
+#text{
+  color: #ffffffa6;
+  font-family: 'Open sans',sans-serif;
+  font-size:14px;
+  margin-top:30px;
+  margin-bottom: 40px;
+  text-align:left;
+}
+#imgtrio{
+  
+  width: 150px;
+  display: flex;
+  justify-content:space-around;
+}
+#imgtrio > i{
+  font-size:25px;
+  color:#8ec038;
+  
+}
+
+#footlogo{
+  width: 150px;
+  height:76px;
+}
+
+#contact{
+  color:white;
+}
+
+#log{
+  color:#8ec038;
+}
+
+#foot > h5{
+  font-size:15px;
+  color:white;
+  margin-top:6px;
+  padding-left: 20px;
+}
+
+#expl{
+  color:#8ec038;
+}
+.green{
+  color:#8ec038;
+}
+
+    </style>
+</head>
+<body>
+       <!-- Upper Navbar -->
+  <div id="uppernav">
+    <div id="leftnav">
+      <div>
+        <i id="iconuper" class="fa-solid fa-location-dot"></i> Food delivary Only in Hydrabad</div>
+      <div>
+        <i id="iconuper" class="fa-solid fa-phone-volume "></i> <b>9100347380</b></div>
+      <div>
+        <i id="iconuper"class="fa-solid fa-envelope"></i> fitmealsindia@gmail.com</div>
+    </div>
+    <div id="rightnav">
+      <div> <i id="iconuper" class="fa-solid fa-magnifying-glass"></i></div>
+        <a href="login.html"><div><i id="iconuper" class="fa-regular fa-user"></i></div></a>
+        <a href="cartPage.html"><div> <i id="iconuper" class="fa-solid fa-bag-shopping"></i></div></a>
+    </div>
+  </div>
+
+<!-- Second Navbar -->
+  <div id="cont">
+    <div>
+      <img id="imglogo" src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt="">
+    </div>
+    <div id="link">
+      <h3 ><a href="index.html" id="homecss">Home</a></h3>
+      <div class="dropdown">
+        <h3 class="droph3">Meal Plans <i id="dispicon1" class="fa-solid fa-angle-right"></i></h3>
+        <div class="dropdown-content">
+        <a href="weightLossMealPlan.html">Weight Loss Meal Plan</a>
+        <a href="weightLossMealPlan.html">Maintenance Meal Plan</a>
+        <a href="weightLossMealPlan.html">Athletic Meal Plan</a>
+        <a href="weightLossMealPlan.html">keto Meal Plan</a>
+        <a href="weightLossMealPlan.html">Transformation Challenges</a>
+        </div>
+      </div>
+      
+      <h3><a href="health_coaching.html"  id="healthcoching">Health Coaching</a></h3>
+      <div class="dropdown">
+        <h3 class="droph3">Product <i id="dispicon1" class="fa-solid fa-angle-right"></i></h3>
+        <div class="dropdown-content">
+        <a href="vegan.html">Vegan Sweets</a>
+        <a href="lo-cal.html">Low calories</a>
+        </div>
+      </div>
+      <h3>Blog</h3>
+      <div class="dropdown">
+        <h3 class="droph3">About Us <i id="dispicon1" class="fa-solid fa-angle-right"></i></h3>
+        <div class="dropdown-content">
+        <a href="ourStory.html">Our Story</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="testimonials.html">Testimonials</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button id="callbtn">Call:9100347380</button>
+    </div>
+  </div>
+
+
+
+    <header class="page-header">
+        <div id="container">
+         <h1>Checkout</h1>
+        </div>
+    </header>
+
+    <div id="inner-container">
+        <div class="box">Returning customer?<a href="">Click here to login</a></div>
+        <div class="box">Have a coupon?<a href="">Click here to enter your code</a></div>
+        <div>
+
+            <p>Billing Details</p>
+            <form action="" id="myForm">
+
+             <div id="name">
+                <div>
+                    <label for="">First name <sup>*</sup></label>
+                    <div class="inner">
+                    <input type="text">
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="">Last name <sup>*</sup></label>
+                    <div class="inner">
+                        <input type="text">
+                    </div>
+                </div>
+             </div>
+                
+
+                <div>
+                    <label for="">Country / Region <sup>*</sup></label>
+                    <select name="" id="">
+                        <option value="India">India</option>
+                    </select>
+                </div>
+
+                <div>
+                <label for="">Town / City <sup>*</sup></label>
+                <input type="text">
+                </div>
+
+                <div>
+                <label for="">State <sup>*</sup></label>
+                <select name="" id="selectOption">
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                </select>
+                </div>
+                <div>
+                    <label for="">PIN <sup>*</sup></label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label for="">Phone <sup>*</sup></label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label for="">Email address <sup>*</sup></label>
+                    <input type="email">
+                </div>
+
+                <a href="sign.html">Create an account?</a>
+               
+            </form>
+            <a href="payment.html">​<button class="Chkbtn">Place Order</button></a>
+        </div>
+    </div>
+    <div id="container1">
+        <div>
+            <div class="">	
+              <a class="logo" href="index.html">
+                <img id="footlogo" src=https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png alt="Fitmeals">
+              </a>
+            </div>
+              <div>
+                <p id="text"> Fitmeals culinary team consists of very passionate and skilled chefs.Our team is well versed in nutrition and all our menus and plans are designed by qualified nutrition experts.</p>
+            </div>
+            <div id="imgtrio">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div id="explore">
+            <h1 id="expl">Explore</h1>
+            <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Home</h4>
+            <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Meal Plan</h4>  
+        </div>
+        <div id="explore">
+          <h1 id="expl">Links</h1>
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> About Us</h4>
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Blog</h4>
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> FAQ</h4>  
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Testimonials</h4>  
+          </div>
+        <div id="contact">
+          <h1 id="expl">Contact</h1>
+                <div id="foot">
+                    <i id="log" class="fa-solid fa-phone-volume "></i>
+                    <b class="green">Call Us :</b>
+                    <h5>9100347480</h5>
+                    <h5>9963697412</h5>
+                </div>
+                <div id="foot">
+                    <i id="log" class="fa-solid fa-envelope"></i>
+                    <b class="green">Email Us :</b>
+                    <h5>fitmealsindia@gmail.com</h5>
+                </div>
+                <div id="foot">
+                    <i id="log" class="fa-solid fa-location-dot"></i>
+                    <b class="green">Our Location</b>
+                    <h5>Banjara Hills, Road no.5, Hyderabad</h5>
+                </div>
+          </div>
+</body>
+</html>
